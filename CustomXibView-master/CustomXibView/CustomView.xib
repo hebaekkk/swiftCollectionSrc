@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomView" customModule="CustomXibView" customModuleProvider="target">
+            <connections>
+                <outlet property="businessNameLabel" destination="1tc-mg-N8r" id="HSK-wf-FsF"/>
+                <outlet property="businessNumLabel" destination="GUw-PG-xiX" id="YUD-GR-uXa"/>
+                <outlet property="membershipLabel" destination="Bll-Ov-a1X" id="Ml3-M2-jOc"/>
+                <outlet property="profileImage" destination="XYb-Ig-1KD" id="dVg-hl-tW8"/>
+                <outlet property="userNameLabel" destination="BLW-aG-a2D" id="LWj-hG-BeO"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="303"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="pIH-AD-vpy">
+                    <rect key="frame" x="128" y="146" width="158.5" height="20.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="청소하는 청년" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1tc-mg-N8r">
+                            <rect key="frame" x="0.0" y="0.0" width="93" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XSO-Gr-9JO">
+                            <rect key="frame" x="101" y="0.0" width="5" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="노미미" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BLW-aG-a2D">
+                            <rect key="frame" x="114" y="0.0" width="44.5" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pencil.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="XYb-Ig-1KD">
+                    <rect key="frame" x="172" y="60.5" width="70" height="69"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="3H6-9H-XlU"/>
+                        <constraint firstAttribute="width" secondItem="XYb-Ig-1KD" secondAttribute="height" multiplier="1:1" id="8EZ-q2-2bB"/>
+                        <constraint firstAttribute="height" constant="70" id="rkX-Aw-cYQ"/>
+                    </constraints>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="HM7-1l-RvY">
+                    <rect key="frame" x="92.5" y="174.5" width="229" height="20.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="사업자등록번호" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pQ2-In-ASs">
+                            <rect key="frame" x="0.0" y="0.0" width="103" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20-123123-123" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GUw-PG-xiX">
+                            <rect key="frame" x="111" y="0.0" width="118" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="kjH-2B-QUQ">
+                    <rect key="frame" x="158.5" y="211" width="97" height="20.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BASIC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bll-Ov-a1X">
+                            <rect key="frame" x="0.0" y="0.0" width="48.5" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="사용중" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OWV-Ls-UCj">
+                            <rect key="frame" x="52.5" y="0.0" width="44.5" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="kjH-2B-QUQ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="7HZ-gu-FIU"/>
+                <constraint firstItem="XYb-Ig-1KD" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="16" id="9BP-p8-QEn"/>
+                <constraint firstItem="pIH-AD-vpy" firstAttribute="top" secondItem="XYb-Ig-1KD" secondAttribute="bottom" constant="16" id="AKT-Hw-mKc"/>
+                <constraint firstItem="XYb-Ig-1KD" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="PhH-9O-L93"/>
+                <constraint firstItem="HM7-1l-RvY" firstAttribute="top" secondItem="pIH-AD-vpy" secondAttribute="bottom" constant="8" id="QFb-EA-J1m"/>
+                <constraint firstItem="HM7-1l-RvY" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ej1-aj-6eM"/>
+                <constraint firstItem="kjH-2B-QUQ" firstAttribute="top" secondItem="HM7-1l-RvY" secondAttribute="bottom" constant="16" id="ghl-nw-PZw"/>
+                <constraint firstItem="pIH-AD-vpy" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="m1q-w3-RKO"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137.68115942028987" y="-49.21875"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="pencil.circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

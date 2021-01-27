@@ -1,0 +1,54 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '13.0'
+
+target 'PFXTexture' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+    pod 'Texture', '3.0'
+    pod 'TextureSwiftSupport'
+    # RxSwift
+    pod 'RealmSwift'
+    pod 'RxSwift'
+    pod 'RxRealm'
+    pod 'RxAlamofire'
+    pod 'RxDataSources'
+    #bind
+    pod 'RxCocoa-Texture', :git => 'https://github.com/PFXStudio/RxCocoa-Texture.git'
+    #tap
+    pod 'GTTexture-RxExtension', :git => 'https://github.com/PFXStudio/GTTexture-RxExtension.git'
+
+    pod 'Action'
+    pod 'RxSwiftExt'
+# RxViewModel에서 RxSwift 낮은 버전 디펜던시 하고 있음.
+#    pod 'RxViewModel'
+    pod 'RxGesture'
+
+    # Image
+    pod 'Nuke'
+
+    # Transition
+    pod 'Hero'
+
+    # Reusable
+    pod 'Reusable'
+
+    # ProgressHud
+    pod 'JGProgressHUD'
+
+    # Swift Lint
+    pod 'SwiftLint'
+    pod 'SnapKit'
+
+  # Pods for PFXTexture
+
+  target 'PFXTextureTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'PFXTextureUITests' do
+    # Pods for testing
+  end
+
+end
